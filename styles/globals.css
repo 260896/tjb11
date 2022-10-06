@@ -15,12 +15,128 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.maintain {
+  width: 92px;
+  right: 79px;
+  /* background: url(../images/icon_maintain.svg) left 4px center no-repeat rgba(0,0,0,0.65); */
 }
+
+  .maintain:after {
+      width: 210px;
+      bottom: -3px;
+      left: -55px
+  }
+  .memP_listtitle {
+    color: #fff;
+    font-size: 14px;
+    line-height: 29px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.memP_list {
+    position: absolute;
+    top: 46px;
+    right: -210px;
+    width: 780px;
+    background-color: RGBA(0,0,0,0.8);
+    border-radius: 5px;
+    padding: 5px 0px 0px;
+    line-height: 30px;
+    font-size: 14px;
+    z-index: 1;
+    display: none;
+}
+
+.memP_list_3 {
+    float: left;
+    width: 240px;
+    margin: 0px 0 5px 15px;
+}
+
+.memp_bottom_L2 {
+    float: left;
+    width: 510px;
+    margin-left: 15px;
+}
+
+.memP_Total_FZ {
+    font-weight: normal;
+}
+
+.memp_bottom_L2 ul {
+    float: left;
+    display: table;
+    width: 240px;
+    margin: 5px 15px 0 0;
+}
+
+.btn_memP_turnBack2 {
+    background-color: #1987d2;
+    color: #fff;
+    width: 240px;
+    border-radius: 3px;
+    height: 30px;
+    float: right;
+    margin: 5px 15px 5px 0px;
+}
+.mainNav_In{
+  display: flex;
+}
+.navList li:hover .gameBanner{
+  display: block !important;
+}
+.popup-content {
+  width: 50%;
+}
+.popup-content .header{
+  display: flex;
+}
+.input_box {width: 240px; }
+        .voice_prompt {margin-left: 145px !important;}
+        .become_members { font-size: 18px !important;}
+        .btn_deposit {padding-right: 35px;background-position: 155px center;}
+        .btn_Browse {padding-right:35px;background-position: 140px center;}
+        .btn_SentOut {background-position: 125px center;}
+        .formPrompt{left:146px;}
+        .popup_form:before {
+          z-index: 999;
+          width: 10px;
+          height: 8px;
+          content: "";
+          display: block;
+          position: absolute;
+          right: 7px;
+          top: 50%;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          background: url(https://www.tjb11.net/images/main/btn_selectAccount.png) no-repeat center center;
+      }
+      select.select_box.info_box3 {
+          margin: 0;
+          margin-left: 45px;
+          border: 1px solid rgb(229,229,229);
+          border-radius: 0;
+          height: 40px;
+          line-height: 40px;
+          box-sizing: border-box;
+          background: rgb(255,255,255);
+          color: rgb(0,0,0);
+          padding: 0 25px 0 8px;
+          cursor: pointer;
+          outline: none;
+          width: 270px !important;
+          font-size: 13px !important;
+          position: relative !important;
+      }
+    .btn_message {min-width: 80px;width:unset;background-position-x: 92%;background-position-y: center;background-size: 22%;}
+        .btn_voice{width:80px !important; padding-left: 5px ;background-position-x:95%!important;background-position-y:center !important;background-size:20% !important}
+        .btn_ver_code {width: 80px !important;}
+        .Resend_ver_code.on {width: 80px;}
+        .voice_prompt {background-position-y: top;background-size: 6%;line-height: 15px;font-size: 12px;width: 220px;padding-left: 20px;}
+        .btn_verification {width: 100px;}
+        .btn_ver_code_ok {width: 25px;right: 32px;}
+        .sliderText {padding-left:15px;}
+        #btnContactCS {width:100px}
