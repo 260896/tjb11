@@ -20,11 +20,31 @@ function topMenu(props) {
                 <div id="divImport1" className="showib"></div>
             </div>
             <div id="divNotLogined" className="headIn_R">
-                <Popup modal trigger={
+                <Popup trigger={<input className="btn_register" type="button" value="Đăng Ký" />}
+                    modal
+                    nested >
+                    {close => (<div className="modal">
+                        <div className="app-popup-container">
+                            <section className="hover-container login">
+                                <div className="container">
+                                    <div className="members_header">
+                                        <h2 className="title-center">Đăng nhập</h2>
+                                        <a className="btn_close" onClick={close}></a>
+                                    </div>
+                                </div>
+                                <div className="body members_bottom">
+                                    {<><Content /></>}
+                                </div>
+                            </section>
+                        </div>
+                                    
+                    </div>)}
+                </Popup>
+                {/* <Popup modal trigger={
                     <input className="btn_register" type="button" value="Đăng Ký" />
                 }>
                     {close => <Content close={close} />}
-                </Popup>
+                </Popup> */}
                 <input id="txtUser" className="signIn_ID uppercase" type="text" placeholder="ID / Điện thoại" onkeydown="SubmitEnterIndex(event);" maxlength="11" onclick={()=> GetV2E(this.value)}/* "this.value = GetV2E(this.value);" */ onkeyup="this.value = GetV2E(this.value);" onafterpaste="this.value = GetV2E(this.value);"
                 onblur="this.value = GetV2E(this.value);" />
                 <div className="passwordBox">
@@ -34,7 +54,7 @@ function topMenu(props) {
                         <div className="divPrompt">Quên mật khẩu</div>
                     </div>
                 </div>
-                <input className="btn_signIn" type="button" value="Đăng nhập" onclick="UserPassIsEmpty();" />
+                <input className="btn_signIn" type="button" value="Đăng nhập"/>
             </div>
             <div id="divLogined" className="headIn_R hidden" style={{display:"none"}}>
                 <div id="lteLevel" className="memLevel_1">Cấp Bạc</div>
